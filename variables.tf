@@ -1,13 +1,13 @@
 variable "path" {
-  type = list(object({
-    module = string
-  }))
-  default = [
-    {
-      module = "./"
-    }]
+	type = list(object({
+		module = string
+	}))
+	default = [
+		{
+			module = "./"
+		}]
 }
-variable "python-functionality" {
-  type = string
-  default = "print('Hello Terraform!')"
+variable "python-hello" {
+	type = string
+	default = "print('Hello world! :)')"
 }
